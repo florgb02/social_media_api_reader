@@ -111,9 +111,7 @@ public class APISettings{
 		 	}
 
 		 	//Execute Query 
-
 		 	//If success return true;
-
 		 	//CLose Connection.
 
 		 }catch(Exception $error){
@@ -124,27 +122,6 @@ public class APISettings{
 		return $success;
 	}
 
-	/*
-			EX: 
-
-			{body: [
-			  {message_id: 1, message_text: ‘Here’s a picture of me with my #mzwallace.’}, 
-			  {message_id: 2, message_ text: ‘Hey #mzwallace, Wow! That was f@$t!!!’},
-			  {message_id: 3, message_text: ‘#mzwallace #handbags #<3 spread the @mzwallace love!’}
-			]}
-
-			{data: [
-			  {id: 1, text: ‘Checkout my new twinker account! Here’s a picture of me with my #mzwallace.’}, 
-			  {id: 2, text: ‘Hey #mzwallace, I love twinker!’},
-			  {id: 3, text: ‘#mzwallace #handbags #<3 spread the @mzwallace love!’}
-			]}
-
-			{[
-			  {_id: 1, message: ‘Here’s a picture of me with my #mzwallace.’}, 
-			  {_id: 2, message: ‘Hey #mzwallace, #money #fame!’},
-			  {_id: 3, message: ‘#mzwallace #handbags #<3 spread the @mzwallace love!’}
-			]}
-	*/
 	private function parseAndCleanData($main_tag, $id_tag, $msg_tag){
 		$array_to_save = array();
 
@@ -166,9 +143,7 @@ public class APISettings{
 		          $array_to_save[]['id'] = $id;
 		          $array_to_save[]['text'] = $text;
 		       }
-		        
 		}
-
 		return $array_to_save;
 	}
 	
@@ -226,7 +201,6 @@ public class APISettings{
 		}
 
 		return $success;
-		
 	}
 }
 
