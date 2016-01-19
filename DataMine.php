@@ -23,7 +23,7 @@ class DataMiner extends DataMinable{
 
 	public function mine(){
 
-		$api = new APISettings( $platform );
+		$api = new APISettings( $this->platform );
 
 		$success = $api->runData();
 
