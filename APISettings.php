@@ -194,7 +194,7 @@ public class APISettings{
 		
 		$results = $this->getData();
 
-		if(!is_null($result) && $result ){
+		if(!is_null($results) && $results ){
 			$success = $this->saveData( $results );
 		}else{
 			$success = false;
